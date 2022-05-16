@@ -1,9 +1,8 @@
-.cat {
+.fa-solid.fa-cat {
     position: absolute;
-    top: 40%;
-    left: 40%;
-    width: 200px;
-    height: 200px;
+    top: 43%;
+    left: 43%;
+    font-size: 90px;
     transform: none;
     transition: 1s;
 }
@@ -14,4 +13,27 @@
     top: 39%;
     left: 41%;
     opacity: 1;
+}
+.fa-solid.fa-bars {
+    font-size: 40px;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    transition: 0.5s;
+}
+.fa-solid.fa-bars:hover {
+    transition: 0.5s;
+    transform: rotate(180deg)
+}
+.menu {
+    background-color: #F7F5F2;
+    transition: 0.5s;
+    opacity: 0;
+    width: 100px;
+    height: 0px;
+}
+.fa-solid-fa-bars:hover .menu{
+    transition: 0.5s;
+    opacity: 1;
+    height: 400px;;
 }
