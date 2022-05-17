@@ -1,3 +1,10 @@
+.container {
+    position: absolute;
+    left: 10%;
+    top: 1px;
+    width: 80vw;
+    height: 98vh;
+}
 .fa-solid.fa-cat {
     position: absolute;
     top: 43%;
@@ -14,26 +21,28 @@
     left: 41%;
     opacity: 1;
 }
-.fa-solid.fa-bars {
+
+.menu {
+    position: absolute;
+    top: 50px;
+    left: -15px;
+    background-color: #040303;
+    transition: 1s;
+    opacity: 1;
+    width: 100px;
+    height: 400px;
+    z-index: 2;
+    border-radius: 15px;
+}
+.fa-solid.fa-meteor {
+    transition: 0.5s;
     font-size: 40px;
     position: absolute;
-    top: 5%;
-    left: 3%;
-    transition: 0.5s;
+    top: 50px;
+    left: 35px;
+    color: white;
 }
-.fa-solid.fa-bars:hover {
+.fa-solid.fa-meteor:hover {
     transition: 0.5s;
-    transform: rotate(180deg)
-}
-.menu {
-    background-color: #F7F5F2;
-    transition: 0.5s;
-    opacity: 0;
-    width: 100px;
-    height: 0px;
-}
-.fa-solid-fa-bars:hover .menu{
-    transition: 0.5s;
-    opacity: 1;
-    height: 400px;;
+    color: #6A67CE;
 }
