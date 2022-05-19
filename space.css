@@ -1,4 +1,4 @@
-.fa-solid.fa-cat-space {
+.fa-solid.fa-fish {
     position: absolute;
     top: 43%;
     left: 43%;
@@ -15,7 +15,7 @@
     opacity: 1;
 }
 body {
-    background-image: url('/source/space.jpg');
+    background-image: url('/source/ocean.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
