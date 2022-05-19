@@ -1,7 +1,7 @@
 window.onload = function() {
 
 var place = 0
-const cat = document.querySelector('.fa-solid.fa-cat')
+const cat = document.querySelector('#cat')
 const meow = document.querySelector('.meow')
 const mur = document.querySelector('.mur')
 const text = document.querySelector('.click')

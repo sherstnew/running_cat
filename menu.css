@@ -1,0 +1,36 @@
+.menu {
+    position: absolute;
+    top: 50px;
+    left: -15px;
+    background-color: #040303;
+    transition: 1s;
+    opacity: 1;
+    width: 100px;
+    height: 400px;
+    z-index: 2;
+    border-radius: 15px;
+}
+.fa-solid.fa-house-tree {
+    transition: 0.5s;
+    font-size: 40px;
+    position: absolute;
+    top: 50px;
+    left: 35px;
+    color: white;
+}
+.fa-solid.fa-house-tree:hover {
+    transition: 0.5s;
+    text-shadow: 0px 0px 30px white;
+}
+.fa-solid.fa-meteor {
+    transition: 0.5s;
+    font-size: 40px;
+    position: absolute;
+    top: 100px;
+    left: 35px;
+    color: white;
+}
+.fa-solid.fa-meteor:hover {
+    transition: 0.5s;
+    text-shadow: 0px 0px 30px white;
+}

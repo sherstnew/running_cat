@@ -1,4 +1,4 @@
-.fa-solid.fa-cat {
+.fa-solid.fa-cat-space {
     position: absolute;
     top: 43%;
     left: 43%;
@@ -13,4 +13,9 @@
     top: 39%;
     left: 41%;
     opacity: 1;
+}
+body {
+    background-image: url('/source/space.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
