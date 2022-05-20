@@ -13,9 +13,14 @@
     top: 39%;
     left: 41%;
     opacity: 1;
+    transition: 1s;
 }
 body {
-    background-image: url('/source/ocean.jpg');
+    overflow: hidden;
+    width: 99vw;
+    height: 99vh;
+    background: #60aaeb;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: 1s;
 }

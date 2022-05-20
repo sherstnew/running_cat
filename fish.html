@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4258c575e8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/fish.css">
     <script src="/cat.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/menu.css">
-    <title>Бегающий кот</title>
+    <title>рыбовое</title>
 </head>
 <body>
 
@@ -17,8 +17,8 @@
         <div class="circle" style="left: 13px;"></div>
     </div>
 
-<div class="click">Click to me!</div>
-<i class="fa-solid fa-cat" id="entity"></i>
+    <div class="click">Click to me!</div>
+    <i class="fa-solid fa-fish" id="entity"></i>
 
 <div class="menu">
     <a href="/index.html"><i class="fa-solid fa-earth-americas"></i></a>
@@ -37,34 +37,29 @@
     toogle.addEventListener('click', tgl)
     off = 13 + 'px'
     on = 50 + 'px'
-
-    function tlg() {
-        
-    let theme = localStorage.getItem('theme')
-
-    if (theme == 'black') {
-            localStorage.setItem('theme', white)
-            circle.style.left = off
-            circle.style.background = 'black'
-            toogle.style.background = '#FAF5E4'
-            body.style.background = 'white'
-            menu.style.background = 'black'
-            icon1.style.color = 'white'
-            icon2.style.color = 'white'
-            text.style.color = 'black'
-            entity.style.color = 'black'
-    } else if (theme == 'white') {
-            localStorage.setItem('theme', 'black')
+    
+    function tgl() {
+        if (circle.style.left == off) {
             circle.style.left = on
             circle.style.background = 'white'
             toogle.style.background = '#2C394B'
-            body.style.background = 'black'
+            body.style.background = '#143F6B'
             menu.style.background = 'white'
             icon1.style.color = 'black'
             icon2.style.color = 'black'
             text.style.color = 'white'
             entity.style.color = 'white'
-    }
+        } else if (circle.style.left == on) {
+            circle.style.left = off
+            circle.style.background = 'black'
+            toogle.style.background = '#FAF5E4'
+            body.style.background = '#60aaeb'
+            menu.style.background = 'black'
+            icon1.style.color = 'white'
+            icon2.style.color = 'white'
+            text.style.color = 'black'
+            entity.style.color = 'black'
+        }
     }
 </script>
 </body>
