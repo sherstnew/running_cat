@@ -1,3 +1,7 @@
+@font-face {
+    src: url('/source/Icon-Regular.ttf');
+    font-family: Icon;
+}
 .toogle {
     position: absolute;
     top: 90%;
@@ -19,7 +23,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border-radius: 50px;;
+    border-radius: 50px;
 }
 .menu {
     position: absolute;
@@ -33,15 +37,16 @@
     z-index: 2;
     border-radius: 15px;
 }
-.fa-solid.fa-earth-americas {
+.home {
+    font-family: Icon;
     transition: 0.5s;
     font-size: 40px;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 35px;
     color: white;
 }
-.fa-solid.fa-earth-americas:hover {
+.home:hover {
     transition: 0.5s;
     text-shadow: 0px 0px 30px white;
 }

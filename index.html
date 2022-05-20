@@ -21,7 +21,7 @@
 <i class="fa-solid fa-cat" id="entity"></i>
 
 <div class="menu">
-    <a href="/index.html"><i class="fa-solid fa-earth-americas"></i></a>
+    <a href="/index.html" class="home">h</i></a>
     <a href="/fish.html"><i class="fa-solid fa-water-ladder"></i></a>
 </div>
 
@@ -30,20 +30,52 @@
     const circle = document.querySelector('.circle')
     const body = document.querySelector('body')
     const menu = document.querySelector('.menu')
-    const icon1 = document.querySelector('.fa-solid.fa-earth-americas')
+    const icon1 = document.querySelector('.home')
     const icon2 = document.querySelector('.fa-solid.fa-water-ladder')
     const entity = document.querySelector('#entity')
     const text = document.querySelector('.click')
     toogle.addEventListener('click', tgl)
     off = 13 + 'px'
     on = 50 + 'px'
+    
+    let theme = localStorage.getItem('theme')
 
-    function tlg() {
+    if (theme == null) {
+        theme = 'white'
+        localStorage.setItem('theme', 'white')
+    } else if (theme == 'white') {
+            localStorage.removeItem('theme')
+            localStorage.setItem('theme', 'white')
+            circle.style.left = off
+            circle.style.background = 'black'
+            toogle.style.background = '#FAF5E4'
+            body.style.background = 'white'
+            menu.style.background = 'black'
+            icon1.style.color = 'white'
+            icon2.style.color = 'white'
+            text.style.color = 'black'
+            entity.style.color = 'black'
+    } else if (theme == 'black') {
+            localStorage.removeItem('theme')
+            localStorage.setItem('theme', 'black')
+            circle.style.left = on
+            circle.style.background = 'white'
+            toogle.style.background = '#2C394B'
+            body.style.background = 'black'
+            menu.style.background = 'white'
+            icon1.style.color = 'black'
+            icon2.style.color = 'black'
+            text.style.color = 'white'
+            entity.style.color = 'white'
+    }
+
+    function tgl() {
         
     let theme = localStorage.getItem('theme')
 
     if (theme == 'black') {
-            localStorage.setItem('theme', white)
+            localStorage.removeItem('theme')
+            localStorage.setItem('theme', 'white')
             circle.style.left = off
             circle.style.background = 'black'
             toogle.style.background = '#FAF5E4'
@@ -54,6 +86,7 @@
             text.style.color = 'black'
             entity.style.color = 'black'
     } else if (theme == 'white') {
+            localStorage.removeItem('theme')
             localStorage.setItem('theme', 'black')
             circle.style.left = on
             circle.style.background = 'white'
