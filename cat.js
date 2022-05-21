@@ -14,6 +14,7 @@ entity.style.top = '30%'
 entity.style.left = '30%'
 
 entity.addEventListener('mouseover', entitymove)
+entity.addEventListener('click', entitymove)
 
 function entitymove() {
     switch (place) {
