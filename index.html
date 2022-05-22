@@ -21,9 +21,9 @@
 <i class="fa-solid fa-cat" id="entity"></i>
 
 <div class="menu">
-    <a href="/index.html" class="home">h</i></a>
+    <a href="/index.html" class="home">h</a>
     <a href="/fish.html"><i class="fa-solid fa-water-ladder"></i></a>
-    <div class="reload" onclick="location.reload()">r</div>
+    <a href="/index.html" class="rel">r</a>
 </div>
 
 <script>
@@ -33,13 +33,13 @@
     const menu = document.querySelector('.menu')
     const icon1 = document.querySelector('.home')
     const icon2 = document.querySelector('.fa-solid.fa-water-ladder')
-    const reload = document.querySelector('.reload')
+    const rel = document.querySelector('.rel')
     const entity = document.querySelector('#entity')
     const text = document.querySelector('.click')
     toogle.addEventListener('click', tgl)
     off = 13 + 'px'
     on = 50 + 'px'
-    
+
     let theme = localStorage.getItem('theme')
 
     if (theme == null) {
@@ -55,7 +55,7 @@
             menu.style.background = 'black'
             icon1.style.color = 'white'
             icon2.style.color = 'white'
-            reload.style.color = 'white'
+            rel.style.color = 'white'
             text.style.color = 'black'
             entity.style.color = 'black'
     } else if (theme == 'black') {
@@ -68,7 +68,7 @@
             menu.style.background = 'white'
             icon1.style.color = 'black'
             icon2.style.color = 'black'
-            reload.style.color = 'black'
+            rel.style.color = 'black'
             text.style.color = 'white'
             entity.style.color = 'white'
     }
@@ -87,6 +87,7 @@
             menu.style.background = 'black'
             icon1.style.color = 'white'
             icon2.style.color = 'white'
+            rel.style.color = 'white'
             text.style.color = 'black'
             entity.style.color = 'black'
     } else if (theme == 'white') {
@@ -99,6 +100,7 @@
             menu.style.background = 'white'
             icon1.style.color = 'black'
             icon2.style.color = 'black'
+            rel.style.color = 'black'
             text.style.color = 'white'
             entity.style.color = 'white'
     }
