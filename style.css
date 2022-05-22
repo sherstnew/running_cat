@@ -6,12 +6,3 @@
     transform: none;
     transition: 1s;
 }
-.click {
-    font-family: 'Epilogue', sans-serif;
-    font-size: 30px;
-    position: absolute;
-    top: 39%;
-    left: 41%;
-    opacity: 1;
-    transition: 1s;
-}

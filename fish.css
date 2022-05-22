@@ -17,15 +17,6 @@
     font-family: Icon;
     animation: fish 1s infinite;
     }
-.click {
-    font-family: 'Epilogue', sans-serif;
-    font-size: 30px;
-    position: absolute;
-    top: 39%;
-    left: 41%;
-    opacity: 1;
-    transition: 1s;
-}
 body {
     overflow: hidden;
     width: 99vw;
