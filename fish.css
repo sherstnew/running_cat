@@ -1,11 +1,22 @@
-.fa-solid.fa-fish {
+@keyframes fish {
+    0% {transform: rotate(10deg);}
+    50% {transform: rotate(-20deg);}
+    100% {transform: rotate(10deg);}
+}
+@font-face {
+    src: url('/source/Icon-Regular.ttf');
+    font-family: Icon;
+}
+.fish {
     position: absolute;
     top: 43%;
     left: 43%;
-    font-size: 90px;
+    font-size: 100px;
     transform: none;
     transition: 1s;
-}
+    font-family: Icon;
+    animation: fish 1s infinite;
+    }
 .click {
     font-family: 'Epilogue', sans-serif;
     font-size: 30px;
