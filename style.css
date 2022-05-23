@@ -1,8 +1,13 @@
-.fa-solid.fa-cat {
+@font-face {
+    src: url('/source/Icon-Regular.ttf');
+    font-family: Icon;
+}
+.cat {
+    font-family: Icon;
     position: absolute;
     top: 43%;
     left: 43%;
-    font-size: 90px;
+    font-size: 130px;
     transform: none;
     transition: 1s;
 }

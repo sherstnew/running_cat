@@ -61,8 +61,8 @@ window.onload = function() {
 
         if (counter == 5) {
             body.style.background = '#B33030'
-            toogle.style.opacity = 0
-            menu.style.opacity = 0
+            toogle.style.display = 'none'
+            menu.style.display = 'none'
             satan.style.opacity = 0.4
             entity.style.color = 'white'
             entity.style.animation = 'hide 4s'
