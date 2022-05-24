@@ -38,6 +38,7 @@
     font-family: Icon;
 }
 .cat {
+    user-select: none;
     position: absolute;
     top: 43%;
     left: 43%;
@@ -72,7 +73,6 @@
     transition: 1s;
 }
 body {
-    height: 100%;
-    transition: 0.2s;
+    transition: 1s;
     overflow: hidden;
 }

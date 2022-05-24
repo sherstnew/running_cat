@@ -3,6 +3,7 @@
     font-family: Icon;
 }
 .cat {
+    user-select: none;
     font-family: Icon;
     position: absolute;
     top: 43%;
