@@ -73,15 +73,15 @@ window.onload = function() {
             satan.style.opacity = 0.4
             entity.style.color = 'white'
             entity.style.animation = 'hide 4s'
-            setTimeout(function() {
-                entity.style.opacity = 0
-                setTimeout(function(){
-                    body.style.animation = 'hide 3s'
-                        setTimeout(function(){
-                            location.href = '/'
-                        }, 1000)
-                }, 2000)
-            }, 3000)
+            // setTimeout(function() {
+            //     entity.style.opacity = 0
+            //     setTimeout(function(){
+            //         body.style.animation = 'hide 3s'
+            //             setTimeout(function(){
+            //                 location.href = '/'
+            //             }, 1000)
+            //     }, 2000)
+            // }, 3000)
             
         }
     }
