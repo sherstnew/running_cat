@@ -60,6 +60,7 @@
     animation: hell 7s infinite;
 }
 .satan {
+    user-select: none;
     display: flex;
     justify-content: center;
     position: absolute;

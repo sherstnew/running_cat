@@ -102,4 +102,5 @@ a {
     left: 41%;
     opacity: 1;
     transition: 1s;
+    user-select: none;
 }
