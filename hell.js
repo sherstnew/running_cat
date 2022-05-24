@@ -1,6 +1,10 @@
 window.onload = function() {
 
     var place = 0
+    var pos1 = ''
+    var pos2 = ''
+    const min = 10;
+    const max = 80;
     var counter = 0
     const entity = document.querySelector('#entity')
     const text = document.querySelector('.click')
@@ -39,21 +43,24 @@ window.onload = function() {
                 counter += 1
                 break
             case 2:
-                entity.style.top = '60%'
-                entity.style.left = '20%'
-                place = 3
+                pos1 = Math.floor(Math.random() * (max - min + 1)) + min + '%';
+                pos2 = Math.floor(Math.random() * (max - min + 1)) + min + '%';
+                entity.style.top = pos1
+                entity.style.left = pos2
                 counter += 1
                 break
             case 3:
-                entity.style.top = '70%'
-                entity.style.left = '60%'
-                place = 4
+                pos1 = Math.floor(Math.random() * (max - min + 1)) + min + '%';
+                pos2 = Math.floor(Math.random() * (max - min + 1)) + min + '%';
+                entity.style.top = pos1
+                entity.style.left = pos2
                 counter += 1
                 break
             case 4:
-                entity.style.top = '10%'
-                entity.style.left = '60%'
-                place = 0
+                pos1 = Math.floor(Math.random() * (max - min + 1)) + min + '%';
+                pos2 = Math.floor(Math.random() * (max - min + 1)) + min + '%';
+                entity.style.top = pos1
+                entity.style.left = pos2
                 counter += 1
                 break
     

@@ -1,6 +1,10 @@
 window.onload = function() {
 
 var place = 0
+var pos1 = ''
+var pos2 = ''
+const min = 10;
+const max = 80;
 const entity = document.querySelector('#entity')
 const text = document.querySelector('.click')
 
@@ -19,28 +23,38 @@ entity.addEventListener('click', entitymove)
 function entitymove() {
     switch (place) {
         case 0: 
-            entity.style.top = '50%'
-            entity.style.left = '40%'
+            pos1 = Math.floor(Math.random() * (max - min + 1)) + min + '%';
+            pos2 = Math.floor(Math.random() * (max - min + 1)) + min + '%';
+            entity.style.top = pos1
+            entity.style.left = pos2
             place = 1
             break
         case 1:
-            entity.style.top = '30%'
-            entity.style.left = '20%'
+            pos1 = Math.floor(Math.random() * (max - min + 1)) + min + '%';
+            pos2 = Math.floor(Math.random() * (max - min + 1)) + min + '%';
+            entity.style.top = pos1
+            entity.style.left = pos2
             place = 2
             break
         case 2:
-            entity.style.top = '50%'
-            entity.style.left = '20%'
+            pos1 = Math.floor(Math.random() * (max - min + 1)) + min + '%';
+            pos2 = Math.floor(Math.random() * (max - min + 1)) + min + '%';
+            entity.style.top = pos1
+            entity.style.left = pos2
             place = 3
             break
         case 3:
-            entity.style.top = '50%'
-            entity.style.left = '60%'
+            pos1 = Math.floor(Math.random() * (max - min + 1)) + min + '%';
+            pos2 = Math.floor(Math.random() * (max - min + 1)) + min + '%';
+            entity.style.top = pos1
+            entity.style.left = pos2
             place = 4
             break
         case 4:
-            entity.style.top = '30%'
-            entity.style.left = '60%'
+            pos1 = Math.floor(Math.random() * (max - min + 1)) + min + '%';
+            pos2 = Math.floor(Math.random() * (max - min + 1)) + min + '%';
+            entity.style.top = pos1
+            entity.style.left = pos2
             place = 0
             break
 
